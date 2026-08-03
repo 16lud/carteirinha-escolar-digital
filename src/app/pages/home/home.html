@@ -1,55 +1,183 @@
-<section class="hero">
+<header class="navbar">
 
-    <div class="container">
+    <div class="logo">
 
-        <div class="row align-items-center">
-
-            <!-- TEXTO -->
-            <div class="col-lg-6 hero-text">
-
-                <span class="badge">
-                    Transporte Escolar Inteligente
-                </span>
-
-                <h1>
-                    Conectando estudantes,
-                    escolas e motoristas
-                    com segurança.
-                </h1>
-
-                <p>
-                    A solução inteligente para conectar estudantes,
-                    motoristas e escolas com segurança e transparência.
-                </p>
-
-
-                <div class="buttons">
-
-                    <button class="btn-primary-custom">
-                        Cadastrar
-                    </button>
-
-                    <button class="btn-outline-custom">
-                        Entrar
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- IMAGEM -->
-            <div class="col-lg-6 image-area">
-
-                <img 
-                src="images/onibus.png"
-                class="bus-image"
-                alt="Transporte escolar inteligente">
-
-            </div>
-
+        <div class="logo-icon">
+            🚍
         </div>
 
+        <span>
+            Transporte 
+            <strong>Digital</strong>
+        </span>
+
     </div>
+
+
+    <nav class="nav-links">
+
+        <a href="#">
+            Produtos ▾
+        </a>
+
+        <a href="#">
+            Escolas
+        </a>
+
+        <a href="#">
+            Recursos ▾
+        </a>
+
+        <a href="#">
+            Central de Ajuda
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <span>
+            🇧🇷 BR
+        </span>
+
+
+        <button class="btn-outline">
+            Log in
+        </button>
+
+
+        <button class="btn-primary">
+            Criar conta
+        </button>
+
+
+    </div>
+
+
+</header>
+
+
+
+<section class="hero">
+
+
+    <div class="hero-text">
+
+
+        <h1>
+            Conectando estudantes,
+            motoristas e escolas
+            com segurança e tecnologia
+        </h1>
+
+
+        <p>
+            Rastreamento em tempo real,
+            comunicação clara e paz de espírito
+            para todas as famílias brasileiras.
+        </p>
+
+
+        <button class="btn-primary big">
+            Começar agora
+        </button>
+
+
+    </div>
+
+
+
+    <div class="hero-image">
+
+        <img 
+        src="images/onibus.png"
+        alt="Ônibus escolar inteligente">
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="profile-selector">
+
+
+<h2>
+Selecione seu perfil para começar:
+</h2>
+
+
+<div class="profile-cards">
+
+
+<div class="profile-card"
+[class.active]="selectedProfile === 'pai'"
+(click)="selectProfile('pai')">
+
+<div class="icon yellow">
+💛
+</div>
+
+Pai
+
+</div>
+
+
+
+
+<div class="profile-card"
+[class.active]="selectedProfile === 'aluno'"
+(click)="selectProfile('aluno')">
+
+<div class="icon blue">
+🏠
+</div>
+
+Aluno
+
+</div>
+
+
+
+
+<div class="profile-card"
+[class.active]="selectedProfile === 'motorista'"
+(click)="selectProfile('motorista')">
+
+<div class="icon green">
+👮
+</div>
+
+Motorista
+
+</div>
+
+
+
+
+<div class="profile-card"
+[class.active]="selectedProfile === 'lider'"
+(click)="selectProfile('lider')">
+
+<div class="icon purple">
+🪪
+</div>
+
+Líder Escolar
+
+</div>
+
+
+
+</div>
+
+
+<button class="btn-primary saiba">
+Saiba mais
+</button>
+
 
 </section>
