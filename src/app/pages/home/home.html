@@ -1,183 +1,370 @@
 <header class="navbar">
 
-    <div class="logo">
+  <div class="logo">
 
-        <div class="logo-icon">
-            🚍
-        </div>
-
-        <span>
-            Transporte 
-            <strong>Digital</strong>
-        </span>
-
+    <div class="logo-icon">
+      🚍
     </div>
 
+    <span>
+      Transporte <strong>Digital</strong>
+    </span>
 
-    <nav class="nav-links">
-
-        <a href="#">
-            Produtos ▾
-        </a>
-
-        <a href="#">
-            Escolas
-        </a>
-
-        <a href="#">
-            Recursos ▾
-        </a>
-
-        <a href="#">
-            Central de Ajuda
-        </a>
-
-    </nav>
+  </div>
 
 
-    <div class="nav-actions">
+  <nav class="nav-links">
 
-        <span>
-            🇧🇷 BR
-        </span>
+    <a href="#">
+      Produtos ▾
+    </a>
+
+    <a href="#">
+      Escolas
+    </a>
+
+    <a href="#">
+      Recursos ▾
+    </a>
+
+    <a href="#">
+      Central de Ajuda
+    </a>
+
+  </nav>
 
 
-        <button class="btn-outline">
-            Log in
-        </button>
+  <div class="nav-actions">
 
+    <span>
+      🇧🇷 BR
+    </span>
 
-        <button class="btn-primary">
-            Criar conta
-        </button>
+    <button class="btn-outline">
+      Log in
+    </button>
 
+    <button class="btn-primary">
+      Criar conta
+    </button>
 
-    </div>
+  </div>
 
 
 </header>
 
 
 
-<section class="hero">
+
+<main class="hero-container">
 
 
-    <div class="hero-text">
+  <!-- TÍTULO -->
+
+  <section class="hero-header">
+
+    <h1>
+      Conectando estudantes,
+      motoristas e escolas
+      com segurança e tecnologia
+    </h1>
 
 
-        <h1>
-            Conectando estudantes,
-            motoristas e escolas
-            com segurança e tecnologia
-        </h1>
+    <p>
+      Rastreamento em tempo real,
+      comunicação clara e paz de espírito
+      para todas as famílias brasileiras.
+      Comece agora!
+    </p>
 
 
-        <p>
-            Rastreamento em tempo real,
-            comunicação clara e paz de espírito
-            para todas as famílias brasileiras.
-        </p>
-
-
-        <button class="btn-primary big">
-            Começar agora
-        </button>
-
-
-    </div>
+  </section>
 
 
 
-    <div class="hero-image">
+
+
+  <!-- ÁREA PRINCIPAL -->
+
+  <section class="hero-composition">
+
+
+
+    <!-- ESQUERDA -->
+
+    <div class="side-cards">
+
+
+      <div class="card-wrapper tilt-left-top">
 
         <img 
-        src="images/onibus.png"
-        alt="Ônibus escolar inteligente">
+        src="images/mae-e-filha.jpg"
+        alt="Mãe e filha"
+        class="floating-img">
+
+      </div>
+
+
+
+      <div class="card-wrapper tilt-left-bottom">
+
+        <img 
+        src="images/familia-dispositivo.jpg"
+        alt="Família"
+        class="floating-img">
+
+      </div>
 
 
     </div>
 
 
-</section>
-
-
-
-<section class="profile-selector">
-
-
-<h2>
-Selecione seu perfil para começar:
-</h2>
-
-
-<div class="profile-cards">
-
-
-<div class="profile-card"
-[class.active]="selectedProfile === 'pai'"
-(click)="selectProfile('pai')">
-
-<div class="icon yellow">
-💛
-</div>
-
-Pai
-
-</div>
 
 
 
 
-<div class="profile-card"
-[class.active]="selectedProfile === 'aluno'"
-(click)="selectProfile('aluno')">
+    <!-- CENTRO -->
 
-<div class="icon blue">
-🏠
-</div>
-
-Aluno
-
-</div>
+    <div class="main-bus-wrapper">
 
 
 
+      <div class="card-wrapper tilt-left-inner">
 
-<div class="profile-card"
-[class.active]="selectedProfile === 'motorista'"
-(click)="selectProfile('motorista')">
 
-<div class="icon green">
-👮
-</div>
+        <img 
+        src="images/embarque-alunos.jpg"
+        alt="Alunos entrando no ônibus"
+        class="floating-img">
 
-Motorista
 
-</div>
+      </div>
 
 
 
 
-<div class="profile-card"
-[class.active]="selectedProfile === 'lider'"
-(click)="selectProfile('lider')">
 
-<div class="icon purple">
-🪪
-</div>
-
-Líder Escolar
-
-</div>
+      <div class="center-bus">
 
 
+        <img
 
-</div>
+        src="images/onibus.png"
+
+        alt="Ônibus escolar inteligente"
+
+        class="bus-img">
 
 
-<button class="btn-primary saiba">
-Saiba mais
-</button>
+      </div>
 
 
-</section>
+
+
+
+      <div class="card-wrapper tilt-right-inner">
+
+
+        <img
+
+        src="images/estudantes-conversando.jpg"
+
+        alt="Estudantes"
+
+        class="floating-img">
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- DIREITA -->
+
+
+    <div class="side-cards">
+
+
+      <div class="card-wrapper tilt-right-top">
+
+
+        <img
+
+        src="images/motorista-gps.jpg"
+
+        alt="Motorista"
+
+        class="floating-img">
+
+
+      </div>
+
+
+
+
+
+      <div class="card-wrapper tilt-right-bottom">
+
+
+        <img
+
+        src="images/criancas-professora.jpg"
+
+        alt="Sala de aula"
+
+        class="floating-img">
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <!-- PERFIS -->
+
+
+  <section class="profile-selector">
+
+
+    <p class="selector-title">
+
+      Selecione seu perfil para começar:
+
+    </p>
+
+
+
+
+    <div class="profile-cards">
+
+
+
+
+
+      <div
+
+      class="profile-card"
+
+      [class.active]="selectedProfile === 'aluno'"
+
+      (click)="selectProfile('aluno')">
+
+
+        <div class="icon-circle blue">
+
+          🏠
+
+        </div>
+
+
+        <span>
+
+          Aluno
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+
+      <div
+
+      class="profile-card"
+
+      [class.active]="selectedProfile === 'motorista'"
+
+      (click)="selectProfile('motorista')">
+
+
+        <div class="icon-circle green">
+
+          👮
+
+        </div>
+
+
+        <span>
+
+          Motorista
+
+        </span>
+
+
+      </div>
+
+
+
+
+
+
+      <div
+
+      class="profile-card"
+
+      [class.active]="selectedProfile === 'escola'"
+
+      (click)="selectProfile('escola')">
+
+
+        <div class="icon-circle purple">
+
+          🪪
+
+        </div>
+
+
+        <span>
+
+          Escola
+
+        </span>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <button class="btn-cta">
+
+      Saiba mais
+
+    </button>
+
+
+
+
+  </section>
+
+
+
+</main>
