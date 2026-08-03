@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Home {
 
-  selectedProfile = 'pai';
+  selectedProfile = 'aluno';
 
-  selectProfile(profile: string) {
+
+  selectProfile(profile:string){
+
     this.selectedProfile = profile;
+
   }
 
 }
