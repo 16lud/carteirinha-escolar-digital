@@ -1,13 +1,12 @@
-<div class="dashboard-page">
+```html
+<div class="dashboard">
 
   <!-- ================= HEADER ================= -->
 
   <header class="top-header">
 
     <div class="brand">
-      <div class="brand-icon">
-        🚌
-      </div>
+      <div class="brand-icon">🚌</div>
 
       <div class="brand-text">
         <strong>Transporte Digital</strong>
@@ -31,467 +30,516 @@
   </header>
 
 
-  <!-- ================= MENU LATERAL ================= -->
+  <!-- ================= ESTRUTURA ================= -->
 
-  <aside class="sidebar">
-
-    <div class="menu-title">
-      MENU
-    </div>
+  <div class="dashboard-body">
 
 
-    <button
-      class="menu-item active"
-      (click)="irParaInicio()">
+    <!-- ================= MENU LATERAL ================= -->
 
-      <span>🏠</span>
-      <span>Início</span>
+    <aside class="sidebar">
 
-    </button>
-
-
-    <button
-      class="menu-item"
-      (click)="minhaRota()">
-
-      <span>🚌</span>
-      <span>Minha rota</span>
-
-    </button>
-
-
-    <button
-      class="menu-item"
-      (click)="localizacao()">
-
-      <span>📍</span>
-      <span>Localização</span>
-
-    </button>
-
-
-    <button
-      class="menu-item"
-      (click)="horarios()">
-
-      <span>🕐</span>
-      <span>Horários</span>
-
-    </button>
-
-
-    <button
-      class="menu-item"
-      (click)="notificacoes()">
-
-      <span>🔔</span>
-      <span>Notificações</span>
-
-      <span class="notification-badge">
-        0
-      </span>
-
-    </button>
-
-
-    <button
-      class="menu-item"
-      (click)="meuPerfil()">
-
-      <span>👤</span>
-      <span>Meu perfil</span>
-
-    </button>
-
-
-    <div class="menu-separator"></div>
-
-
-    <button
-      class="menu-item logout"
-      (click)="sair()">
-
-      <span>🚪</span>
-      <span>Sair</span>
-
-    </button>
-
-  </aside>
-
-
-  <!-- ================= CONTEÚDO PRINCIPAL ================= -->
-
-  <main class="main-content">
-
-
-    <!-- ================= BOAS-VINDAS ================= -->
-
-    <section class="welcome">
-
-      <div>
-
-        <p class="welcome-small">
-          Bem-vinda ao seu painel 👋
-        </p>
-
-        <h1>
-          Olá, {{ nomeAluno }}!
-        </h1>
-
-        <p class="welcome-description">
-          Aqui você pode acessar sua carteirinha e acompanhar
-          seu transporte escolar.
-        </p>
-
+      <div class="menu-title">
+        MENU
       </div>
 
-    </section>
+
+      <button
+        class="menu-item active"
+        (click)="irParaInicio()">
+
+        <span class="menu-icon">🏠</span>
+        <span>Início</span>
+
+      </button>
 
 
-    <!-- ================= CARTEIRINHA ================= -->
+      <button
+        class="menu-item"
+        (click)="minhaRota()">
 
-    <section class="card-section">
+        <span class="menu-icon">🚌</span>
+        <span>Minha rota</span>
 
-      <div class="section-title">
+      </button>
+
+
+      <button
+        class="menu-item"
+        (click)="localizacao()">
+
+        <span class="menu-icon">📍</span>
+        <span>Localização</span>
+
+      </button>
+
+
+      <button
+        class="menu-item"
+        (click)="horarios()">
+
+        <span class="menu-icon">🕐</span>
+        <span>Horários</span>
+
+      </button>
+
+
+      <button
+        class="menu-item"
+        (click)="notificacoes()">
+
+        <span class="menu-icon">🔔</span>
+        <span>Notificações</span>
+
+        <span class="notification-badge">
+          0
+        </span>
+
+      </button>
+
+
+      <button
+        class="menu-item"
+        (click)="meuPerfil()">
+
+        <span class="menu-icon">👤</span>
+        <span>Meu perfil</span>
+
+      </button>
+
+
+      <div class="menu-separator"></div>
+
+
+      <button
+        class="menu-item logout"
+        (click)="sair()">
+
+        <span class="menu-icon">🚪</span>
+        <span>Sair</span>
+
+      </button>
+
+    </aside>
+
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main class="main-content">
+
+
+      <!-- ================= SAUDAÇÃO ================= -->
+
+      <section class="welcome">
 
         <div>
 
-          <h2>
-            Minha carteirinha digital
-          </h2>
+          <p class="welcome-small">
+            Bem-vinda ao seu painel 👋
+          </p>
 
-          <p>
-            Apresente o QR Code ao motorista durante o embarque.
+          <h1>
+            Olá, {{ nomeAluno }}!
+          </h1>
+
+          <p class="welcome-description">
+            Acompanhe seu transporte escolar e acesse sua
+            carteirinha digital.
           </p>
 
         </div>
 
-        <span class="active-status">
-          ● ATIVA
-        </span>
-
-      </div>
+      </section>
 
 
-      <!-- ================= CARTÃO ================= -->
+      <!-- ================= GRID PRINCIPAL ================= -->
 
-      <div class="student-card">
+      <div class="dashboard-grid">
 
 
-        <!-- CABEÇALHO DO CARTÃO -->
+        <!-- ================= COLUNA ESQUERDA ================= -->
 
-        <div class="student-card-header">
+        <div class="left-column">
 
-          <div class="card-brand">
 
-            <div class="mini-bus">
-              🚌
+          <!-- RESUMO -->
+
+          <section class="summary-grid">
+
+
+            <!-- PRÓXIMO HORÁRIO -->
+
+            <div class="summary-card">
+
+              <div class="summary-icon time">
+                🕐
+              </div>
+
+              <div class="summary-info">
+
+                <span>Próximo horário</span>
+
+                <strong>
+                  06:30
+                </strong>
+
+                <small>
+                  Embarque pela manhã
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <!-- ROTA -->
+
+            <div class="summary-card">
+
+              <div class="summary-icon route">
+                🚌
+              </div>
+
+              <div class="summary-info">
+
+                <span>Minha rota</span>
+
+                <strong>
+                  Rota Escolar 01
+                </strong>
+
+                <small>
+                  Rota cadastrada
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div class="summary-card">
+
+              <div class="summary-icon location">
+                📍
+              </div>
+
+              <div class="summary-info">
+
+                <span>Status do transporte</span>
+
+                <strong>
+                  Aguardando
+                </strong>
+
+                <small>
+                  O veículo ainda não iniciou a rota
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <!-- NOTIFICAÇÕES -->
+
+            <div class="summary-card">
+
+              <div class="summary-icon notification">
+                🔔
+              </div>
+
+              <div class="summary-info">
+
+                <span>Notificações</span>
+
+                <strong>
+                  Nenhuma nova
+                </strong>
+
+                <small>
+                  Tudo certo por enquanto
+                </small>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <!-- ================= AVISO ================= -->
+
+          <section class="info-box">
+
+            <div class="info-icon">
+              💡
             </div>
 
             <div>
+
               <strong>
-                TRANSPORTE DIGITAL
+                Como utilizar sua carteirinha?
               </strong>
 
-              <span>
-                CARTEIRINHA ESCOLAR
-              </span>
+              <p>
+                No momento do embarque, apresente o QR Code
+                da sua carteirinha ao motorista. O código será
+                utilizado para validar sua identificação no
+                transporte escolar.
+              </p>
+
             </div>
 
-          </div>
+          </section>
 
 
-          <div class="card-status">
-            ATIVA
-          </div>
+          <!-- ================= FUTURO MAPA ================= -->
+
+          <section class="transport-preview">
+
+            <div class="transport-header">
+
+              <div>
+
+                <span class="section-label">
+                  TRANSPORTE
+                </span>
+
+                <h2>
+                  Acompanhe seu transporte
+                </h2>
+
+              </div>
+
+              <span class="waiting-status">
+                ● Aguardando
+              </span>
+
+            </div>
+
+
+            <div class="transport-placeholder">
+
+              <div class="transport-placeholder-icon">
+                📍
+              </div>
+
+              <strong>
+                O acompanhamento da rota aparecerá aqui
+              </strong>
+
+              <p>
+                Quando o veículo iniciar a rota,
+                você poderá acompanhar sua localização.
+              </p>
+
+            </div>
+
+          </section>
+
 
         </div>
 
 
-        <!-- ================= CORPO DO CARTÃO ================= -->
+        <!-- ================= CARTEIRINHA ================= -->
 
-        <div class="student-card-body">
+        <aside class="card-column">
 
 
-          <!-- FOTO -->
+          <div class="card-title">
 
-          <div class="student-photo">
+            <div>
 
-            <span>
-              👤
+              <span class="section-label">
+                IDENTIFICAÇÃO
+              </span>
+
+              <h2>
+                Carteirinha digital
+              </h2>
+
+            </div>
+
+            <span class="active-status">
+              ● ATIVA
             </span>
 
           </div>
 
 
-          <!-- INFORMAÇÕES -->
+          <!-- CARTÃO -->
 
-          <div class="student-data">
+          <div class="student-card">
 
 
-            <div class="data-item name">
+            <!-- TOPO -->
 
-              <span>
-                Nome do aluno
+            <div class="student-card-header">
+
+              <div class="card-brand">
+
+                <div class="mini-bus">
+                  🚌
+                </div>
+
+                <div>
+
+                  <strong>
+                    TRANSPORTE DIGITAL
+                  </strong>
+
+                  <span>
+                    CARTEIRINHA ESCOLAR
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div class="card-status">
+                ATIVA
+              </div>
+
+            </div>
+
+
+            <!-- CORPO -->
+
+            <div class="student-card-body">
+
+
+              <!-- FOTO -->
+
+              <div class="student-photo">
+                <span>👤</span>
+              </div>
+
+
+              <!-- DADOS -->
+
+              <div class="student-data">
+
+
+                <div class="data-item name">
+
+                  <span>
+                    Nome do aluno
+                  </span>
+
+                  <strong>
+                    {{ nomeAluno }}
+                  </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                  <span>
+                    Matrícula
+                  </span>
+
+                  <strong>
+                    {{ matricula }}
+                  </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                  <span>
+                    Turma
+                  </span>
+
+                  <strong>
+                    {{ turma }}
+                  </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                  <span>
+                    Turno
+                  </span>
+
+                  <strong>
+                    {{ turno }}
+                  </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                  <span>
+                    Escola
+                  </span>
+
+                  <strong>
+                    {{ escola }}
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- QR CODE -->
+
+            <div class="qr-area">
+
+              <span class="qr-title">
+                CÓDIGO DE VALIDAÇÃO
               </span>
 
-              <strong>
-                {{ nomeAluno }}
-              </strong>
+              <div class="qr-code">
+
+                <qrcode
+                  [qrdata]="qrCodeData">
+                </qrcode>
+
+              </div>
+
+              <p>
+                Apresente este código ao motorista
+                durante o embarque.
+              </p>
 
             </div>
 
 
-            <div class="data-grid">
+            <!-- RODAPÉ -->
 
+            <div class="student-card-footer">
 
-              <div class="data-item">
+              <span>
+                Carteirinha válida para transporte escolar
+              </span>
 
-                <span>
-                  Matrícula
-                </span>
-
-                <strong>
-                  {{ matricula }}
-                </strong>
-
-              </div>
-
-
-              <div class="data-item">
-
-                <span>
-                  Turma
-                </span>
-
-                <strong>
-                  {{ turma }}
-                </strong>
-
-              </div>
-
-
-              <div class="data-item">
-
-                <span>
-                  Turno
-                </span>
-
-                <strong>
-                  {{ turno }}
-                </strong>
-
-              </div>
-
-
-              <div class="data-item">
-
-                <span>
-                  Escola
-                </span>
-
-                <strong>
-                  {{ escola }}
-                </strong>
-
-              </div>
-
+              <span>
+                ID: {{ matricula }}
+              </span>
 
             </div>
 
           </div>
 
 
-          <!-- ================= QR CODE ================= -->
-
-          <div class="qr-area">
-
-            <div class="qr-code">
-
-              <qrcode
-                [qrdata]="qrCodeData"
-                [width]="150"
-                [errorCorrectionLevel]="'M'">
-              </qrcode>
-
-            </div>
-
-
-            <span class="qr-label">
-              Código de validação
-            </span>
-
-            <small>
-              Apresente ao motorista
-            </small>
-
-          </div>
-
-
-        </div>
-
-
-        <!-- ================= RODAPÉ DO CARTÃO ================= -->
-
-        <div class="student-card-footer">
-
-          <span>
-            Carteirinha válida para transporte escolar
-          </span>
-
-          <span>
-            ID: {{ matricula }}
-          </span>
-
-        </div>
+        </aside>
 
       </div>
 
-    </section>
+    </main>
 
-
-    <!-- ================= RESUMO ================= -->
-
-    <section class="summary-grid">
-
-
-      <!-- ROTA -->
-
-      <div class="summary-card">
-
-        <div class="summary-icon route">
-          🚌
-        </div>
-
-        <div>
-
-          <span>
-            Minha rota
-          </span>
-
-          <strong>
-            Rota Escolar 01
-          </strong>
-
-          <small>
-            Próximo embarque: 06:30
-          </small>
-
-        </div>
-
-      </div>
-
-
-      <!-- HORÁRIO -->
-
-      <div class="summary-card">
-
-        <div class="summary-icon time">
-          🕐
-        </div>
-
-        <div>
-
-          <span>
-            Próximo horário
-          </span>
-
-          <strong>
-            06:30
-          </strong>
-
-          <small>
-            Embarque pela manhã
-          </small>
-
-        </div>
-
-      </div>
-
-
-      <!-- LOCALIZAÇÃO -->
-
-      <div class="summary-card">
-
-        <div class="summary-icon location">
-          📍
-        </div>
-
-        <div>
-
-          <span>
-            Transporte
-          </span>
-
-          <strong>
-            Aguardando
-          </strong>
-
-          <small>
-            O veículo ainda não iniciou a rota
-          </small>
-
-        </div>
-
-      </div>
-
-
-      <!-- NOTIFICAÇÕES -->
-
-      <div class="summary-card">
-
-        <div class="summary-icon notification">
-          🔔
-        </div>
-
-        <div>
-
-          <span>
-            Notificações
-          </span>
-
-          <strong>
-            Nenhuma nova
-          </strong>
-
-          <small>
-            Tudo certo por enquanto
-          </small>
-
-        </div>
-
-      </div>
-
-
-    </section>
-
-
-    <!-- ================= AVISO ================= -->
-
-    <section class="info-box">
-
-      <div class="info-icon">
-        💡
-      </div>
-
-      <div>
-
-        <strong>
-          Como utilizar sua carteirinha?
-        </strong>
-
-        <p>
-          No momento do embarque, apresente o QR Code da sua
-          carteirinha ao motorista. O código será utilizado
-          para validar sua identificação no transporte escolar.
-        </p>
-
-      </div>
-
-    </section>
-
-
-  </main>
+  </div>
 
 
   <!-- ================= MENU MOBILE ================= -->
@@ -548,7 +596,7 @@
 
     </button>
 
-
   </nav>
 
 </div>
+```
