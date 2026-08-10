@@ -1,1 +1,120 @@
-<p>escolha-perfil works!</p>
+<div class="perfil-page">
+
+  <header class="top-header">
+
+    <div class="brand" (click)="voltar()">
+      <div class="brand-icon">
+        🚌
+      </div>
+
+      <div class="brand-text">
+        <strong>Transporte Digital</strong>
+        <span>Transporte escolar inteligente</span>
+      </div>
+    </div>
+
+    <button class="help-button">
+      Ajuda?
+    </button>
+
+  </header>
+
+
+  <main class="perfil-content">
+
+    <section class="perfil-card">
+
+      <div class="main-icon">
+        👤
+      </div>
+
+      <h1>Crie sua conta</h1>
+
+      <p class="subtitle">
+        Selecione o tipo de perfil que deseja cadastrar.
+      </p>
+
+
+      <div class="profiles">
+
+        <!-- ALUNO -->
+        <button
+          class="profile-card"
+          (click)="cadastrarAluno()">
+
+          <div class="profile-icon student">
+            👨‍🎓
+          </div>
+
+          <div class="profile-info">
+            <h2>Aluno</h2>
+
+            <p>
+              Cadastre seus dados para acessar rotas e informações do transporte escolar.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+
+        <!-- MOTORISTA -->
+        <button
+          class="profile-card"
+          (click)="cadastrarMotorista()">
+
+          <div class="profile-icon driver">
+            🚍
+          </div>
+
+          <div class="profile-info">
+            <h2>Motorista</h2>
+
+            <p>
+              Cadastre-se para gerenciar suas rotas e viagens escolares.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+
+        <!-- ESCOLA -->
+        <button
+          class="profile-card"
+          (click)="cadastrarEscola()">
+
+          <div class="profile-icon school">
+            🏫
+          </div>
+
+          <div class="profile-info">
+            <h2>Escola</h2>
+
+            <p>
+              Cadastre sua escola para gerenciar alunos, motoristas e rotas.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="back-button"
+        (click)="voltar()">
+
+        ← Voltar para o início
+
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
