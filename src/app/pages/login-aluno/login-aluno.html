@@ -1,1 +1,128 @@
-<p>login-aluno works!</p>
+<div class="login-page">
+
+  <!-- CABEÇALHO -->
+  <header class="top-header">
+
+    <div class="brand" (click)="voltar()">
+
+      <div class="brand-icon">
+        🚌
+      </div>
+
+      <div class="brand-text">
+        <strong>Transporte Digital</strong>
+        <span>Transporte escolar inteligente</span>
+      </div>
+
+    </div>
+
+    <button class="help-button">
+      Ajuda?
+    </button>
+
+  </header>
+
+
+  <!-- CONTEÚDO -->
+  <main class="login-content">
+
+    <section class="login-card">
+
+      <!-- ÍCONE -->
+      <div class="profile-icon">
+        👨‍🎓
+      </div>
+
+
+      <!-- TÍTULO -->
+      <h1>Login do Aluno</h1>
+
+      <p class="subtitle">
+        Acesse suas informações, rotas e transporte escolar.
+      </p>
+
+
+      <!-- FORMULÁRIO -->
+      <form>
+
+        <div class="form-group">
+
+          <label for="email">
+            E-mail
+          </label>
+
+          <input
+            id="email"
+            type="email"
+            placeholder="Digite seu e-mail">
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="senha">
+            Senha
+          </label>
+
+          <input
+            id="senha"
+            type="password"
+            placeholder="Digite sua senha">
+
+        </div>
+
+
+        <div class="forgot-password">
+          <button type="button">
+            Esqueci minha senha
+          </button>
+        </div>
+
+
+        <button
+          type="button"
+          class="login-button"
+          (click)="entrar()">
+
+          Entrar
+
+          <span>→</span>
+
+        </button>
+
+      </form>
+
+
+      <!-- CADASTRO -->
+      <div class="register-section">
+
+        <p>
+          Ainda não possui uma conta?
+        </p>
+
+        <button
+          class="register-button"
+          (click)="criarConta()">
+
+          Criar conta
+
+        </button>
+
+      </div>
+
+
+      <!-- VOLTAR -->
+      <button
+        class="back-button"
+        (click)="voltar()">
+
+        ← Voltar para seleção de perfil
+
+      </button>
+
+    </section>
+
+  </main>
+
+</div>

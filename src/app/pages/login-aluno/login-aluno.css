@@ -1,0 +1,400 @@
+/* ================================
+   PÁGINA
+================================ */
+
+.login-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.top-header {
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dbeafe;
+  border-radius: 13px;
+
+  font-size: 25px;
+}
+
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+.brand-text strong {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.brand-text span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+.help-button {
+  padding: 9px 16px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+.login-content {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+
+  padding: 42px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.08);
+
+  text-align: center;
+}
+
+
+/* ================================
+   ÍCONE
+================================ */
+
+.profile-icon {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dbeafe;
+
+  border-radius: 22px;
+
+  font-size: 38px;
+}
+
+
+/* ================================
+   TÍTULOS
+================================ */
+
+h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 29px;
+  font-weight: 750;
+}
+
+
+.subtitle {
+  max-width: 350px;
+
+  margin: 10px auto 30px;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.form-group {
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #334155;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.form-group input {
+  width: 100%;
+  height: 50px;
+
+  box-sizing: border-box;
+
+  padding: 0 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 11px;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+
+.form-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ================================
+   ESQUECI SENHA
+================================ */
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+
+.forgot-password button {
+  border: none;
+
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   BOTÃO ENTRAR
+================================ */
+
+.login-button {
+  width: 100%;
+  height: 51px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.login-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+.login-button span {
+  font-size: 18px;
+}
+
+
+/* ================================
+   CADASTRO
+================================ */
+
+.register-section {
+  margin-top: 28px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+.register-section p {
+  margin: 0 0 7px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+.register-button {
+  border: none;
+
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   VOLTAR
+================================ */
+
+.back-button {
+  margin-top: 25px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.back-button:hover {
+  color: #2563eb;
+}
+
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 600px) {
+
+  .top-header {
+    height: 70px;
+    padding: 0 20px;
+  }
+
+
+  .brand-text span {
+    display: none;
+  }
+
+
+  .help-button {
+    font-size: 13px;
+  }
+
+
+  .login-content {
+    padding: 30px 16px;
+  }
+
+
+  .login-card {
+    padding: 30px 22px;
+
+    border-radius: 20px;
+  }
+
+
+  h1 {
+    font-size: 25px;
+  }
+
+}
