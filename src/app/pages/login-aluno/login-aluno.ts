@@ -23,4 +23,7 @@ export class LoginAluno {
     this.router.navigate(['/login']);
   }
 
+  voltarHome() {
+    this.router.navigate(['/']);
+  }
 }
