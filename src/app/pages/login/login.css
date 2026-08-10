@@ -1,0 +1,397 @@
+/* ========================================
+   PÁGINA
+======================================== */
+
+.login-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.top-header {
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  box-sizing: border-box;
+}
+
+
+/* Marca */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf2ff;
+  border-radius: 12px;
+
+  font-size: 22px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.brand-text span {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+
+/* Ajuda */
+
+.help-button {
+  border: none;
+  background: transparent;
+
+  color: #1e73e8;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.help-button:hover {
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.login-content {
+  min-height: calc(100vh - 72px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   CARTÃO
+======================================== */
+
+.login-card {
+  width: 100%;
+  max-width: 520px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 38px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 10px 35px rgba(15, 23, 42, 0.08);
+
+  text-align: center;
+}
+
+
+/* ========================================
+   CABEÇALHO DO CARTÃO
+======================================== */
+
+.main-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf2ff;
+
+  border-radius: 16px;
+
+  font-size: 28px;
+}
+
+.login-card h1 {
+  margin: 0;
+
+  font-size: 27px;
+  font-weight: 750;
+
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 10px auto 28px;
+
+  max-width: 390px;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   PERFIS
+======================================== */
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  padding: 16px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  font-family: inherit;
+}
+
+.profile-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #1e73e8;
+
+  box-shadow:
+    0 7px 20px rgba(30, 115, 232, 0.10);
+}
+
+
+/* Ícones */
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+
+  min-width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  font-size: 25px;
+
+  margin-right: 14px;
+}
+
+.student {
+  background: #eaf2ff;
+}
+
+.driver {
+  background: #fff7d6;
+}
+
+.school {
+  background: #eef2ff;
+}
+
+
+/* Informações */
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0 0 4px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.profile-info p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+
+/* Seta */
+
+.arrow {
+  color: #1e73e8;
+
+  font-size: 22px;
+
+  margin-left: 10px;
+}
+
+
+/* ========================================
+   CADASTRO
+======================================== */
+
+.register-section {
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.register-section p {
+  margin: 0 0 8px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.register-button {
+  border: none;
+
+  background: transparent;
+
+  color: #1e73e8;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.register-button:hover {
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   VOLTAR
+======================================== */
+
+.back-button {
+  margin-top: 22px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #1e73e8;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .top-header {
+    height: 64px;
+    padding: 0 20px;
+  }
+
+  .brand-text span {
+    display: none;
+  }
+
+  .login-content {
+    padding: 25px 15px;
+    align-items: flex-start;
+  }
+
+  .login-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .login-card h1 {
+    font-size: 23px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .profile-card {
+    padding: 13px;
+  }
+
+  .profile-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    font-size: 22px;
+  }
+
+  .profile-info p {
+    font-size: 11px;
+  }
+
+}

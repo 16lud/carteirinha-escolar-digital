@@ -1,1 +1,147 @@
-<p>login works!</p>
+<div class="login-page">
+
+  <!-- Cabeçalho -->
+  <header class="top-header">
+
+    <div class="brand" (click)="voltarHome()">
+      <div class="brand-icon">
+        🚌
+      </div>
+
+      <div class="brand-text">
+        <strong>Transporte Digital</strong>
+        <span>Transporte escolar inteligente</span>
+      </div>
+    </div>
+
+    <button class="help-button">
+      Ajuda?
+    </button>
+
+  </header>
+
+
+  <!-- Conteúdo principal -->
+  <main class="login-content">
+
+    <section class="login-card">
+
+      <!-- Ícone -->
+      <div class="main-icon">
+        🔐
+      </div>
+
+      <!-- Título -->
+      <h1>Como você deseja entrar?</h1>
+
+      <p class="subtitle">
+        Selecione seu perfil para acessar o Transporte Digital.
+      </p>
+
+
+      <!-- Perfis -->
+
+      <div class="profiles">
+
+        <!-- ALUNO -->
+        <button
+          class="profile-card"
+          (click)="entrarComoAluno()">
+
+          <div class="profile-icon student">
+            👨‍🎓
+          </div>
+
+          <div class="profile-info">
+            <h2>Aluno</h2>
+
+            <p>
+              Acesse suas informações, rotas e transporte escolar.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+
+        <!-- MOTORISTA -->
+        <button
+          class="profile-card"
+          (click)="entrarComoMotorista()">
+
+          <div class="profile-icon driver">
+            🚍
+          </div>
+
+          <div class="profile-info">
+            <h2>Motorista</h2>
+
+            <p>
+              Gerencie suas rotas, viagens e informações de transporte.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+
+        <!-- ESCOLA -->
+        <button
+          class="profile-card"
+          (click)="entrarComoEscola()">
+
+          <div class="profile-icon school">
+            🏫
+          </div>
+
+          <div class="profile-info">
+            <h2>Escola</h2>
+
+            <p>
+              Gerencie alunos, motoristas, rotas e informações escolares.
+            </p>
+          </div>
+
+          <span class="arrow">→</span>
+
+        </button>
+
+      </div>
+
+
+      <!-- Cadastro -->
+
+      <div class="register-section">
+
+        <p>
+          Ainda não possui uma conta?
+        </p>
+
+        <button
+          class="register-button"
+          (click)="criarConta()">
+
+          Criar conta
+
+        </button>
+
+      </div>
+
+
+      <!-- Voltar -->
+
+      <button
+        class="back-button"
+        (click)="voltarHome()">
+
+        ← Voltar para o início
+
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
