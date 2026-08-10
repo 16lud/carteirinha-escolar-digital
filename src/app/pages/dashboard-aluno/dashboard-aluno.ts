@@ -4,53 +4,51 @@ import { QRCodeComponent } from 'angularx-qrcode';
 
 @Component({
   selector: 'app-dashboard-aluno',
+  standalone: true,
   imports: [QRCodeComponent],
   templateUrl: './dashboard-aluno.html',
-  styleUrl: './dashboard-aluno.css',
+  styleUrl: './dashboard-aluno.css'
 })
 export class DashboardAluno {
 
-  // Dados de demonstração do aluno
+  // Dados fictícios para testar a interface
   nomeAluno = 'Ludmila Tawane';
-  matricula = '20260001';
-  turma = '3º Ano';
+  matricula = '2026001234';
+  turma = '3º Informática';
   turno = 'Matutino';
   escola = 'IFRN';
 
-  // Token fictício para demonstração do QR Code.
-  // Não contém dados pessoais do aluno.
-  qrToken = 'TD-ALUNO-8F4A92C7-2026';
+  // Dados que serão transformados em QR Code
+  // Futuramente isso poderá vir do cadastro/login.
+  qrCodeData = 'TRANSPORTE-DIGITAL-ALUNO-2026001234';
 
   constructor(private router: Router) {}
 
   irParaInicio() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    // Mantém o aluno na página inicial do dashboard
   }
 
   minhaRota() {
-    alert('Área "Minha rota" em desenvolvimento.');
+    console.log('Minha rota');
   }
 
   localizacao() {
-    alert('Área de localização em desenvolvimento.');
+    console.log('Localização');
   }
 
   horarios() {
-    alert('Área de horários em desenvolvimento.');
+    console.log('Horários');
   }
 
   notificacoes() {
-    alert('Você não possui novas notificações.');
+    console.log('Notificações');
   }
 
   meuPerfil() {
-    alert('Área "Meu perfil" em desenvolvimento.');
+    console.log('Meu perfil');
   }
 
   sair() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/login']);
   }
 }
