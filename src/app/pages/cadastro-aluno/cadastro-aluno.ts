@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-aluno',
@@ -6,4 +7,21 @@ import { Component } from '@angular/core';
   templateUrl: './cadastro-aluno.html',
   styleUrl: './cadastro-aluno.css',
 })
-export class CadastroAluno {}
+export class CadastroAluno {
+
+  cadastroConcluido = false;
+
+  constructor(private router: Router) {}
+
+  criarConta() {
+    this.cadastroConcluido = true;
+
+    setTimeout(() => {
+      this.router.navigate(['/dashboard-aluno']);
+    }, 1500);
+  }
+
+  voltar() {
+    this.router.navigate(['/escolha-perfil']);
+  }
+}
