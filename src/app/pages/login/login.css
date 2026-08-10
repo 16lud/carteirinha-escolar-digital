@@ -1,6 +1,6 @@
-/* ========================================
+/* =========================================
    PÁGINA
-======================================== */
+========================================= */
 
 .login-page {
   min-height: 100vh;
@@ -9,22 +9,20 @@
 }
 
 
-/* ========================================
+/* =========================================
    CABEÇALHO
-======================================== */
+========================================= */
 
 .top-header {
   height: 72px;
   background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e2e8f0;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 6%;
-
-  box-sizing: border-box;
+  padding: 0 40px;
 }
 
 
@@ -36,6 +34,7 @@
   gap: 12px;
 
   cursor: pointer;
+  user-select: none;
 }
 
 .brand-icon {
@@ -46,27 +45,27 @@
   align-items: center;
   justify-content: center;
 
-  background: #eaf2ff;
+  background: #eff6ff;
   border-radius: 12px;
 
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .brand-text strong {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: #0f172a;
 }
 
 .brand-text span {
-  font-size: 11px;
+  font-size: 12px;
   color: #64748b;
-  margin-top: 2px;
 }
 
 
@@ -76,92 +75,97 @@
   border: none;
   background: transparent;
 
-  color: #1e73e8;
+  color: #2563eb;
 
   font-size: 14px;
   font-weight: 600;
 
   cursor: pointer;
+
+  padding: 8px 12px;
 }
 
 .help-button:hover {
-  text-decoration: underline;
+  color: #1d4ed8;
 }
 
 
-/* ========================================
+/* =========================================
    CONTEÚDO
-======================================== */
+========================================= */
 
 .login-content {
   min-height: calc(100vh - 72px);
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   padding: 50px 20px;
-  box-sizing: border-box;
 }
 
 
-/* ========================================
-   CARTÃO
-======================================== */
+/* =========================================
+   CARD PRINCIPAL
+========================================= */
 
 .login-card {
   width: 100%;
-  max-width: 520px;
+  max-width: 500px;
 
   background: #ffffff;
 
+  border: 1px solid #e2e8f0;
   border-radius: 20px;
 
-  padding: 38px;
-
-  box-sizing: border-box;
+  padding: 40px;
 
   box-shadow:
-    0 10px 35px rgba(15, 23, 42, 0.08);
+    0 10px 30px rgba(15, 23, 42, 0.08);
 
   text-align: center;
 }
 
 
-/* ========================================
-   CABEÇALHO DO CARTÃO
-======================================== */
+/* =========================================
+   ÍCONE
+========================================= */
 
 .main-icon {
-  width: 58px;
-  height: 58px;
+  width: 64px;
+  height: 64px;
 
-  margin: 0 auto 18px;
+  margin: 0 auto 20px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #eaf2ff;
+  background: #eff6ff;
 
-  border-radius: 16px;
+  border-radius: 18px;
 
-  font-size: 28px;
+  font-size: 30px;
 }
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
 
 .login-card h1 {
   margin: 0;
 
-  font-size: 27px;
-  font-weight: 750;
+  font-size: 28px;
+  line-height: 1.2;
+
+  font-weight: 700;
 
   color: #0f172a;
 }
 
 .subtitle {
-  margin: 10px auto 28px;
-
-  max-width: 390px;
+  margin: 12px 0 30px;
 
   color: #64748b;
 
@@ -170,15 +174,18 @@
 }
 
 
-/* ========================================
+/* =========================================
    PERFIS
-======================================== */
+========================================= */
 
 .profiles {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+
+  text-align: left;
 }
+
 
 .profile-card {
   width: 100%;
@@ -186,69 +193,73 @@
   display: flex;
   align-items: center;
 
-  text-align: left;
+  gap: 15px;
+
+  padding: 17px;
 
   background: #ffffff;
 
   border: 1px solid #e2e8f0;
-
-  border-radius: 15px;
-
-  padding: 16px;
+  border-radius: 16px;
 
   cursor: pointer;
+
+  text-align: left;
 
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
-    box-shadow 0.2s ease;
-
-  font-family: inherit;
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .profile-card:hover {
   transform: translateY(-2px);
 
-  border-color: #1e73e8;
+  border-color: #93c5fd;
+
+  background: #f8fbff;
 
   box-shadow:
-    0 7px 20px rgba(30, 115, 232, 0.10);
+    0 8px 20px rgba(37, 99, 235, 0.08);
 }
 
 
-/* Ícones */
+/* =========================================
+   ÍCONES DOS PERFIS
+========================================= */
 
 .profile-icon {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
 
-  min-width: 50px;
+  flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 13px;
+  border-radius: 14px;
 
   font-size: 25px;
-
-  margin-right: 14px;
 }
 
-.student {
-  background: #eaf2ff;
+.profile-icon.student {
+  background: #eff6ff;
 }
 
-.driver {
-  background: #fff7d6;
+.profile-icon.driver {
+  background: #fefce8;
 }
 
-.school {
-  background: #eef2ff;
+.profile-icon.school {
+  background: #f0fdf4;
 }
 
 
-/* Informações */
+/* =========================================
+   INFORMAÇÕES
+========================================= */
 
 .profile-info {
   flex: 1;
@@ -266,66 +277,80 @@
 .profile-info p {
   margin: 0;
 
-  color: #64748b;
-
   font-size: 12px;
+  line-height: 1.5;
 
-  line-height: 1.45;
+  color: #64748b;
 }
 
 
-/* Seta */
+/* =========================================
+   SETA
+========================================= */
 
 .arrow {
-  color: #1e73e8;
+  color: #2563eb;
 
   font-size: 22px;
+  font-weight: 500;
 
-  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.profile-card:hover .arrow {
+  transform: translateX(4px);
 }
 
 
-/* ========================================
+/* =========================================
    CADASTRO
-======================================== */
+========================================= */
 
 .register-section {
-  margin-top: 28px;
+  margin-top: 30px;
 
-  padding-top: 22px;
+  padding-top: 24px;
 
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #e2e8f0;
 }
 
 .register-section p {
-  margin: 0 0 8px;
-
-  color: #64748b;
+  margin: 0 0 12px;
 
   font-size: 13px;
+
+  color: #64748b;
 }
 
 .register-button {
-  border: none;
+  width: 100%;
 
-  background: transparent;
+  padding: 12px 18px;
 
-  color: #1e73e8;
+  border: 1px solid #2563eb;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #2563eb;
 
   font-size: 14px;
   font-weight: 700;
 
   cursor: pointer;
+
+  transition: 0.2s ease;
 }
 
 .register-button:hover {
-  text-decoration: underline;
+  background: #eff6ff;
 }
 
 
-/* ========================================
+/* =========================================
    VOLTAR
-======================================== */
+========================================= */
 
 .back-button {
   margin-top: 22px;
@@ -342,51 +367,56 @@
 }
 
 .back-button:hover {
-  color: #1e73e8;
+  color: #2563eb;
 }
 
 
-/* ========================================
+/* =========================================
    RESPONSIVIDADE
-======================================== */
+========================================= */
 
 @media (max-width: 600px) {
 
   .top-header {
-    height: 64px;
-    padding: 0 20px;
+    height: auto;
+
+    padding: 16px 20px;
+  }
+
+  .brand-text strong {
+    font-size: 15px;
   }
 
   .brand-text span {
-    display: none;
+    font-size: 11px;
+  }
+
+  .help-button {
+    font-size: 13px;
   }
 
   .login-content {
-    padding: 25px 15px;
-    align-items: flex-start;
+    padding: 30px 16px;
   }
 
   .login-card {
     padding: 28px 20px;
-    border-radius: 16px;
+
+    border-radius: 18px;
   }
 
   .login-card h1 {
-    font-size: 23px;
-  }
-
-  .subtitle {
-    font-size: 13px;
+    font-size: 24px;
   }
 
   .profile-card {
-    padding: 13px;
+    padding: 14px;
   }
 
   .profile-icon {
-    width: 45px;
-    height: 45px;
-    min-width: 45px;
+    width: 46px;
+    height: 46px;
+
     font-size: 22px;
   }
 
@@ -394,4 +424,7 @@
     font-size: 11px;
   }
 
+  .arrow {
+    font-size: 19px;
+  }
 }
