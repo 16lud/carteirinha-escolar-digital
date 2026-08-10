@@ -1,1 +1,137 @@
-<p>login-motorista works!</p>
+<div class="login-page">
+
+  <!-- CABEÇALHO -->
+  <header class="top-header">
+
+    <div class="brand" (click)="voltarHome()">
+
+      <div class="brand-icon">
+        🚌
+      </div>
+
+      <div class="brand-text">
+        <strong>Transporte Digital</strong>
+        <span>Transporte escolar inteligente</span>
+      </div>
+
+    </div>
+
+    <button class="help-button">
+      Ajuda?
+    </button>
+
+  </header>
+
+
+  <!-- CONTEÚDO -->
+  <main class="login-content">
+
+    <section class="login-card">
+
+      <!-- ÍCONE -->
+      <div class="main-icon">
+        🚍
+      </div>
+
+
+      <!-- TÍTULO -->
+      <h1>Login do Motorista</h1>
+
+      <p class="subtitle">
+        Entre para acessar suas rotas e informações de transporte.
+      </p>
+
+
+      <!-- FORMULÁRIO -->
+      <form (submit)="entrar(); $event.preventDefault()">
+
+        <!-- CPF / CNH -->
+        <div class="form-group">
+
+          <label for="documento">
+            CPF ou CNH
+          </label>
+
+          <input
+            id="documento"
+            type="text"
+            placeholder="Digite seu CPF ou CNH"
+            required
+          >
+
+        </div>
+
+
+        <!-- SENHA -->
+        <div class="form-group">
+
+          <label for="senha">
+            Senha
+          </label>
+
+          <input
+            id="senha"
+            type="password"
+            placeholder="Digite sua senha"
+            required
+          >
+
+        </div>
+
+
+        <!-- ESQUECI SENHA -->
+        <div class="forgot-password">
+
+          <a href="javascript:void(0)">
+            Esqueci minha senha
+          </a>
+
+        </div>
+
+
+        <!-- ENTRAR -->
+        <button
+          type="submit"
+          class="login-button">
+
+          Entrar
+
+          <span>→</span>
+
+        </button>
+
+      </form>
+
+
+      <!-- CADASTRO -->
+      <div class="register-section">
+
+        <p>
+          Ainda não possui uma conta?
+        </p>
+
+        <button
+          class="register-button"
+          (click)="criarConta()">
+
+          Criar conta
+
+        </button>
+
+      </div>
+
+
+      <!-- VOLTAR -->
+      <button
+        class="back-button"
+        (click)="voltar()">
+
+        ← Voltar para seleção de perfil
+
+      </button>
+
+    </section>
+
+  </main>
+
+</div>
